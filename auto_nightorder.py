@@ -70,7 +70,6 @@ def auto_insert_nightorder(in_json):
             counter += 1
             current_order += 1 / (2**counter)
             in_json[indeces[id]]["firstNight"] = current_order
-            print(current_order)
     
     # Other nights
 
@@ -102,7 +101,6 @@ def auto_insert_nightorder(in_json):
             counter += 1
             current_order += 1 / (2**counter)
             in_json[indeces[id]]["otherNight"] = current_order
-            print(current_order)
 
     return in_json
 
