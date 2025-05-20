@@ -531,9 +531,9 @@ def generate_almanac(in_json, filename):
                 file.write(f"<p class=\"ability\">{character['ability']}</p>\n")
                 file.write("<hr>\n")
                 
-                if character.get('flavour') is not None:
+                if character.get('flavor') is not None:
 
-                    file.write(f"<div class=\"flavor\">{character['flavour']}</div>\n")
+                    file.write(f"<div class=\"flavor\">{character['flavor']}</div>\n")
                 
                 if character.get('overview') is not None:
 
@@ -574,16 +574,36 @@ def generate_almanac(in_json, filename):
         file.write("<div class=\"nightOrder\">\n")
         file.write("<div class=\"firstNightColumn\">\n")
         file.write("<h3>First Night</h3>\n")
+        file.write("<div class=\"nightOrderList\">")
+
+        first_night_orders = [in_json[x] for x in range(len(in_json[1:])) if in_json[x].get("firstNight", None) is not None]
+        first_night_orders.sort(key = lambda x: x["firstNight"])
+
+        for character in first_night_orders:
+
+            if character.get('image') is not None:
+                file.write(f"<img class=\"nightOrderListIcon\" src=\"{character['image']}\" alt=\"\"/>")
+            else:
+                file.write("<div></div>")
+            file.write(f"<div class=\"nightOrderListName\">\n{character['name']}</div>\n")
+        
+        file.write("</div></div>\n")
+        file.write("<div class=\"otherNightsColumn\">\n")
+        file.write("<h3>Other Nights</h3>\n")
         file.write("<div class=\"nightOrderList\"><div></div>")
 
-        for character in in_json[1:]:
+        other_night_orders = [in_json[x] for x in range(len(in_json[1:])) if in_json[x].get("otherNight", None) is not None]
+        other_night_orders.sort(key = lambda x: x["otherNight"])
 
-            if type(character) != str:
+        for character in first_night_orders:
 
-                file.write(f"<div class=\"nightOrderListName\">\n{character['name']}</div>\n")
-                file.write("<div></div>\n")
+            if character.get('image') is not None:
+                file.write(f"<img class=\"nightOrderListIcon\" src=\"{character['image']}\" alt=\"\"/>")
+            else:
+                file.write("<div></div>")
+            file.write(f"<div class=\"nightOrderListName\">\n{character['name']}</div>\n")
         
-        file.write("</li></ol></div></body></html>")
+        file.write("</div></div></div></div></li></ol></div></body></html>")
 
 def main(in_name = "", out_name = ""):
     

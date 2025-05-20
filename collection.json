@@ -1,102 +1,145 @@
 [
     {
-        "id":"_meta",
-        "name":"Fragments' Insanity",
-        "author":"Wandering Fragments"
+        "id": "_meta",
+        "name": "Fragments' Insanity",
+        "author": "Wandering Fragments",
+        "almanac": "https://quorglepleegjr.github.io/"
     },
     {
-        "id":"intuitor",
-        "name":"Intuitor",
-        "team":"townsfolk",
-        "ability":"Each night, learn the character that would help your team the most."
+        "id": "intuitor",
+        "name": "Intuitor",
+        "team": "townsfolk",
+        "ability": "Each night, learn the character that would help your team the most.",
+        "preceedingFirstNightId": "highpriestess",
+        "preceedingOtherNightId": "highpriestess",
+        "firstNight": 67.5,
+        "otherNight": 85.5,
+        "firstNightReminder": "Show the Intuitor the character that would help their team the most."
     },
     {
-        "id":"priest",
-        "name":"Priest",
-        "team":"townsfolk",
-        "ability":"Each night*, choose a player: if the Demon, you die. One good player registers as the Demon to your ability.",
-        "reminders":[
+        "id": "priest",
+        "name": "Priest",
+        "team": "townsfolk",
+        "ability": "Each night*, choose a player: if the Demon, you die. One good player registers as the Demon to your ability.",
+        "reminders": [
             "Sinner"
-        ]
+        ],
+        "preceedingOtherNightId": "acrobat",
+        "otherNight": 17.5,
+        "otherNightReminder":" The Priest points at another player."
     },
     {
-        "id":"disruptor",
-        "name":"Disruptor",
-        "team":"townsfolk",
-        "ability":"Executions fail if no Townsfolk voted. Evils know you are in play. [+0 or +1 Outsider]",
-        "reminders":[
+        "id": "disruptor",
+        "name": "Disruptor",
+        "team": "townsfolk",
+        "ability": "Executions fail if no Townsfolk voted. Evils know you are in play. [+0 or +1 Outsider]",
+        "reminders": [
             "Townsfolk Voted"
         ],
-        "setup": true
+        "setup": true,
+        "preceedingFirstNightId": "poppygrower",
+        "firstNight": 10.5,
+        "firstNightReminder": "Evils learn the Disruptor is in play"
     },
     {
-        "id":"blackout",
-        "name":"Blackout",
-        "team":"outsider",
-        "ability":"An alive good player is drunk, even if you are dead. Each day, guess who it is: if right, you are drunk until dusk & learn a true statement.",
-        "reminders":[
+        "id": "blackout",
+        "name": "Blackout",
+        "team": "outsider",
+        "ability": "An alive good player is drunk, even if you are dead. Each day, guess who it is: if right, you are drunk until dusk & learn a true statement.",
+        "reminders": [
             "Drunk"
         ]
     },
     {
-        "id":"plagued",
-        "name":"Plagued",
-        "team":"outsider",
-        "ability":"Townsfolk that vote on your execution are drunk until dusk.",
-        "reminders":[
+        "id": "plagued",
+        "name": "Plagued",
+        "team": "outsider",
+        "ability": "Townsfolk that vote on your execution are drunk until dusk.",
+        "reminders": [
             "Drunk"
         ]
     },
     {
-        "id":"ra'atchet",
-        "name":"Ra'atchet",
-        "team":"minion",
-        "ability":"On your 1st night, choose a direction: good abilities affect players 1 step in that direction instead of their intended target.",
-        "reminders":[
+        "id": "ra'atchet",
+        "name": "Ra'atchet",
+        "team": "minion",
+        "ability": "On your 1st night, choose a direction: good abilities affect players 1 step in that direction instead of their intended target.",
+        "reminders": [
             "Clockwise",
             "Anti-Clockwise"
-        ]
+        ],
+        "preceedingFirstNightId": "xaan",
+        "firstNight": 25.5,
+        "firstNightReminder": "The Ra'atchet indicates a direction."
     },
     {
-        "id":"archeolos",
-        "name":"Archeolos",
-        "team":"minion",
-        "ability":"You start by choosing another alive player to give this ability. This is your only ability (if Townsfolk), or this acts twice (if evil & given by good).",
-        "reminders":[
+        "id": "archeolos",
+        "name": "Archeolos",
+        "team": "minion",
+        "ability": "You start by choosing another alive player to give this ability. This is your only ability (if Townsfolk), or this acts twice (if evil & given by good).",
+        "reminders": [
             "Has Ability",
             "Has Ability",
             "Has Ability",
-            "Has Ability"
-        ]
+            "Has Ability",
+            "Doubled",
+            "Doubled"
+        ],
+        "preceedingFirstNightId": "poisoner",
+        "preceedingOtherNightId": "poisoner",
+        "firstNight": 26.5,
+        "otherNight": 12.75,
+        "firstNightReminder": "The Archeolos points at a player.",
+        "otherNightReminder": "The players with the Archeolos ability point at a player, or 2 if they are evil and were given it by good."
     },
     {
-        "id":"sorceror",
-        "name":"Sorceror",
-        "team":"minion",
-        "ability":"Townsfolk nominations poison good nominees. Each night*, if none did, choose a player: they are poisoned until dusk.",
-        "reminders":[
+        "id": "sorceror",
+        "name": "Sorceror",
+        "team": "minion",
+        "ability": "Townsfolk nominations poison good nominees. Each night*, if none did, choose a player: they are poisoned until dusk.",
+        "reminders": [
             "Townsfolk Nominated",
             "Chosen",
             "Poisoned",
             "Poisoned",
             "Poisoned",
             "Poisoned"
-        ]
+        ],
+        "preceedingOtherNightId": "poisoner",
+        "otherNight": 12.5,
+        "otherNightReminder": "If no Townsfolk nominated today, the Sorceror points at a player."
     },
     {
-        "id":"siren",
-        "name":"Siren",
-        "team":"demon",
-        "ability":"Each night*, choose a player: they die. Outsiders you kill change alignment. [Outsiders might start evil, -1 to +1 Outsider]"
+        "id": "siren",
+        "name": "Siren",
+        "team": "demon",
+        "ability": "Each night*, choose a player: they die. Outsiders you kill change alignment. [Outsiders might start evil, -1 to +1 Outsider]",
+        "preceedingOtherNightId": "kazali",
+        "otherNight": 49.875,
+        "otherNightReminder": "The Siren points at a player."
     },
     {
-        "id":"destroyer",
-        "name":"Destroyer",
-        "team":"demon",
-        "ability":"Each night*, you may choose a player & a direction: They & 2 players in that direction for every night you didn't kill die.",
-        "reminders":[
+        "id": "destroyer",
+        "name": "Destroyer",
+        "team": "demon",
+        "ability": "Each night*, you may choose a player & a direction: They & 2 players in that direction for every night you didn't kill die.",
+        "reminders": [
             "Kill Length"
-        ]
+        ],
+        "preceedingOtherNightId": "kazali",
+        "otherNight": 49.75,
+        "otherNightReminder": "The Destroyer points at a player and indicates a direction, or shakes their head."
+    },
+    {
+        "id": "wrazcal",
+        "name": "Wrazcal",
+        "team": "demon",
+        "ability": "Each night*, choose a player: learn how helpful killing them is to your team. Then, choose if they die. If not, tomorrow night, instead choose 2 player: they die.",
+        "reminders": [
+            "Twice"
+        ],
+        "preceedingOtherNightId": "kazali",
+        "otherNight": 49.5
     },
     {
         "id": "blessingofperfidy",
@@ -104,7 +147,7 @@
         "team": "demon",
         "image": "https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/BlessingOfPerfidy.png?raw=true",
         "ability": "After day 5, all but you are poisoned, & good wins if & only if the Storyteller is executed tomorrow. Good players killed by execution bring this 1 day sooner.",
-        "reminders":[
+        "reminders": [
             "Distortion Clock"
         ]
     },
@@ -112,14 +155,14 @@
         "id": "paradoxofmercy",
         "name": "Paradox of Mercy",
         "team": "demon",
-        "image":"https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/ParadoxOfMercy.png?raw=true",
+        "image": "https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/ParadoxOfMercy.png?raw=true",
         "ability": "After day 3, if all Minions live, evil wins. After day 5, evil wins.",
-        "reminders":[
+        "reminders": [
             "1st Night",
             "2nd Night",
             "Minions Failed"
         ],
-        "jinxes":[
+        "jinxes": [
             {
                 "id": "devilsadvocate",
                 "reason": "If the Paradox of Mercy is in play, the Devil's Advocate may not choose themselves on the 3rd night."

@@ -18,11 +18,12 @@ class Character:
         self.other_nights_reminder = ""
 
         # Fields not used officially, but in other code in this repository
+        # Note, the field used in auto_nightorder.py isn't here because that doesn't
+        #   use this class
         self.overview = ""
         self.how_to_run = ""
         self.examples = []
         self.tip = ""
-        self.preceedingOfficialCharacterId = ""
 
     def from_json(in_json):
 
