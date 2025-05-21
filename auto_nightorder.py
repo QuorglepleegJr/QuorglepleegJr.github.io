@@ -19,7 +19,6 @@ def topological_sort(edge_lists, nodes, base_nodes):
         l.append(n)
         for node in dependancies[n]:
             s.append(node)
-            # Valid given only 1 incoming edge anyway
     
     return l
 
