@@ -525,7 +525,13 @@ def generate_almanac(in_json, filename):
 
                 if character.get('image') is not None:
 
-                    file.write(f"<img src=\"{character['image']}\" class=\"characterImage\" alt=\"\"/>")
+                    if type(character['image']) == str:
+
+                        file.write(f"<img src=\"{character['image']}\" class=\"characterImage\" alt=\"\"/>")
+                    
+                    else:
+
+                        file.write(f"<img src=\"{character['image'][0]}\" class=\"characterImage\" alt=\"\"/>")
 
                 file.write(f"<h2>{character['name']}</h2>\n")
                 file.write(f"<p class=\"ability\">{character['ability']}</p>\n")
@@ -535,9 +541,22 @@ def generate_almanac(in_json, filename):
 
                     file.write(f"<div class=\"flavor\">{character['flavor']}</div>\n")
                 
-                if character.get('overview') is not None:
+                if character.get('hook') is not None or character.get('summary') is not None:
 
-                    file.write(f"<div class=\"overview\"><p>{character['overview']}</p></div>\n")
+                    overview_string = f"<div class=\"overview\">"
+                    
+                    if character.get('hook') is not None:
+                        overview_string += f"<p>{character['hook']}</p>\n"
+                    
+                    if character.get('summary') is not None:
+                        overview_string += "<ul>\n"
+                        for line in character['summary']:
+                            overview_string += f"<li>{line}</li>\n"
+                        overview_string += "</ul>\n"
+                    overview_string += "</div>\n"
+
+                    file.write(overview_string)
+                    
                 
                 if character.get('examples') is not None:
 
@@ -590,12 +609,12 @@ def generate_almanac(in_json, filename):
         file.write("</div></div>\n")
         file.write("<div class=\"otherNightsColumn\">\n")
         file.write("<h3>Other Nights</h3>\n")
-        file.write("<div class=\"nightOrderList\"><div></div>")
+        file.write("<div class=\"nightOrderList\">")
 
         other_night_orders = [in_json[x] for x in range(len(in_json[1:])) if in_json[x].get("otherNight", None) is not None]
         other_night_orders.sort(key = lambda x: x["otherNight"])
 
-        for character in first_night_orders:
+        for character in other_night_orders:
 
             if character.get('image') is not None:
                 file.write(f"<img class=\"nightOrderListIcon\" src=\"{character['image']}\" alt=\"\"/>")
