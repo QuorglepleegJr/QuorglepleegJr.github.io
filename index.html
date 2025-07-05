@@ -503,8 +503,8 @@
 <li class="demon"><a href="#fr_insan_siren">Siren</a></li>
 <li class="demon"><a href="#fr_insan_destroyer">Destroyer</a></li>
 <li class="demon"><a href="#fr_insan_wrazcal">Wrazcal</a></li>
-<li class="demon"><a href="#fr_insan_blessingofperfidy">Blessing of Perfidy</a></li>
-<li class="demon"><a href="#fr_insan_paradoxofmercy">Paradox of Mercy</a></li>
+<li class="demon"><a href="#mgob_apocalypsebird">Paradox of Mercy</a></li>
+<li class="demon"><a href="#mgob_whitenight">Blessing of Perfidy</a></li>
 <li class="demon"><a href="#fr_insan_kuthullion">Kuthullion</a></li>
 <li class="traveler"><a href="#fr_insan_thehouse">The House</a></li>
 <a href="#nightOrder">Night Order</a></li>
@@ -516,7 +516,7 @@
 <p class="ability">Each night, learn the character (on or off script) that would help your team the most.</p>
 <hr>
 <div class="flavor">Behind every great idea, behind every good thought, is intuition. Hone that, and maybe you too can think the right way.</div>
-<div class="overview"><p>The Intuitor learns the most useful characters to their team, whether in play or not.</p>
+<div class="overview"><p>The Intuitor learns the most useful characters to their team, whether in play or not, or even on script or not.</p>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -537,6 +537,9 @@
 <hr>
 <div class="flavor">Back, foul demon, BACK!</div>
 <div class="overview"><p>The Priest dies if they encounter the Demon, or a specific good player.</p>
+<ul>
+<li>There is always a good player that registers as the Demon, even if the original one changes alignment.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -557,6 +560,11 @@
 <hr>
 <div class="flavor">Nobody said it was *wrong* to sabotage things.</div>
 <div class="overview"><p>The Disruptor forces Townsfolk to have the say by failing nominations with no Townsfolk votes.</p>
+<ul>
+<li>Failed nominations have 0 votes.</li>
+<li>All evil players know that the Disruptor is in play, even if they aren't Minions or Demons.</li>
+<li>The Disruptor might add an Outsider, replacing a Townsfolk.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -576,23 +584,50 @@
 <p class="ability">If only evils live, they lose, even if you are dead.</p>
 <hr>
 <div class="flavor">If none remain to tend the yard, it shall surely fall to ruin.</div>
+<div class="overview"><p>The Groundskeeper forces evil to kill their own before the end of the game.</p>
+<ul>
+<li>If at any point there are only evil players alive, good wins instantly.</li>
+</ul>
+</div>
+<h3>Examples</h3>
+<div class="example">
+<p>The Imp kills the Undertaker, the last alive good player. Good wins.</p>
+<p>Only the Witch, Po, Evil Ogre, and the Evil Gnome live. Good wins.</p>
+</div>
+<h3>How to Run</h3>
+<div class="how-to-run">
+<p>If the Groundskeeper is in play, and all living players are evil, good wins. Declare this and wrap up the game.</p>
+</div>
 <p class="team">Townsfolk</p></div>
 </li>
 <li class="page" id="fr_insan_satanist">
 <div class="page-contents townsfolk">
 <h2>Satanist</h2>
-<p class="ability">Each night*, a player might die. You & Minions think you are (and you have the ability of) a Minion. You are "the Demon". [+1 Minion, No Demon]</p>
+<p class="ability">Each night*, a player might die. You & Minions think you are (and you have the ability of) an evil Minion. You are "the Demon". [+1 Minion, No Demon]</p>
 <hr>
 <div class="flavor">In the forgotten corners, in the darkest nooks, so does live the evil amongst us.</div>
+<div class="overview"><p>The Satanist makes 2 players who think they are a Minion, but adds paranoia to one being secretly good.</p>
+<ul>
+<li>If the Satanist is in play, the Demon and Satanist tokens are replaced with Minions.</li>
+<li>The Satanist still registers as a good Townsfolk to abilities.</li>
+<li>If the Satanist dies, good wins (including them).</li>
+</ul>
+</div>
 <p class="team">Townsfolk</p></div>
 </li>
 <li class="page" id="fr_insan_blackout">
 <div class="page-contents outsider">
 <h2>Blackout</h2>
-<p class="ability">An alive good player is drunk, even if you are dead. Each day, guess who it is: if right, you are drunk until dawn & learn a true statement.</p>
+<p class="ability">An alive good player is drunk, even if you are dead. Each day, guess who it is: if right, you learn a true statement & are drunk until dawn.</p>
 <hr>
 <div class="flavor">Lot o' good that Soldier trainin' did ya! *I'm drunk!*</div>
 <div class="overview"><p>The Blackout causes an alive good player to be drunk. However, each day they can guess it, they learn a true fact.</p>
+<ul>
+<li>The Blackout means a good player is drunk, even if the Blackout is themselves dead.</li>
+<li>If the drunk player dies, an alive good player becomes drunk instead.</li>
+<li>Each day, the Blackout can guess who is drunk - if right, they learn a true statement, and are then drunk until dawn.</li>
+<li>The Blackout cannot guess whilst dead, but still makes a player drunk.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -613,6 +648,10 @@
 <hr>
 <div class="flavor">Don't touch me!</div>
 <div class="overview"><p>Townsfolk that vote for the Plagued's execution are drunk until the next dusk.</p>
+<ul>
+<li>If a Townsfolk votes for the Plagued's execution, they are instantly drunk.</li>
+<li>Players drunk this way are drunk for the rest of the day, the next night, and the whole of the day after.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -632,11 +671,19 @@
 <hr>
 <div class="flavor">etB ouy ookedl pu hatw hist eantm.</div>
 <div class="overview"><p>The Ra'atchet rotates the grimoire one step for Townsfolk abilities.</p>
+<ul>
+<li>The Ra'atchet must choose a direction.</li>
+<li>All players register as their neighbour in that direction to Townsfolk abilities.</li>
+<li>Any choices at night Townsfolk make instead choose the neighbour of the person they chose.</li>
+<li>Characters that learn passive information are also affected by this, learning instead about players 1 step over.</li>
+<li></li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
 <p>The Fortune Teller chooses the Demon and the Saint, their Red Herring. However, because the Ra'atchet registered each as their neighbour, they learn No.</p>
 <p>The Saint is executed. Good loses.</p>
+<p>The Gambler guesses themself as the Gambler, and their clockwise neighbour dies.</p>
 <p>The Spy learns the entire grimoire rotated 1 step clockwise.</p>
 <p>The Ra'atchet chooses Clockwise. That night, the Empath learns a 1 despite both their neighbours being good, as the player 2 steps clockwise from them is evil.</p>
 <p>The Ra'atchet chooses Anticlockwise. The Slayer shoots the Demon's anticlockwise neighbour, and the Demon dies.</p>
@@ -656,7 +703,11 @@
 <p class="ability">You start by choosing another alive player to give this ability. This is your only ability (if Townsfolk), or this acts twice (if evil & given by good).</p>
 <hr>
 <div class="flavor">Ok class, today we're going to see what these do. Catch!</div>
-<div class="overview"><p>The Archeolos forces good players to play hot potato, hiding Townsfolk abilities, and doubling if a good player gives it to an evil player.</p>
+<div class="overview"><p>The Archeolos forces good players to play hot potato.</p>
+<ul>
+<li>Townsfolk with the Archeolos ability have no other ability until they lose the Archeolos ability.</li>
+<li>If a good player gives the ability to an evil player, that evil player can give out 2 copies of the ability.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -679,6 +730,11 @@
 <hr>
 <div class="flavor">To turn upon one's own must be punished.</div>
 <div class="overview"><p>The Sorceror forces good to permanently poison other good players, or face a night of untrustworthy information.</p>
+<ul>
+<li>If a Townsfolk nominates a good player, that player is poisoned.</li>
+<li>Townsfolk or Outsiders can be poisoned, but only Townsfolk nominations can cause the poison.</li>
+<li>If nobody became poisoned because of the Sorceror in a day, they choose a player that night, who is poisoned until dusk.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -697,8 +753,14 @@
 <h2>Siren</h2>
 <p class="ability">Each night*, choose a player: they die. Outsiders you kill change alignment. [Outsiders might start evil, -1 to +1 Outsider]</p>
 <hr>
-<div class="flavor">They say you oughta dance like no one's watching<br>They’re a telepathic chorus in my mind</div>
+<div class="flavor">They say you oughta dance like no one's watching<br>They're a telepathic chorus in my mind</div>
 <div class="overview"><p>The Siren makes some Outsiders evil, and changes their alignment upon killing them.</p>
+<ul>
+<li>The Siren chooses a player to kill each night besides the first.</li>
+<li>The Siren forces there to be 1 more or 1 fewer Outsider than normal.</li>
+<li>Outsiders might start evil, and learn if they are on the 1st night.</li>
+<li>If the Siren kills an Outsider, they change alignment from good to evil or vice versa.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -718,6 +780,10 @@
 <hr>
 <div class="flavor">Goodbye.</div>
 <div class="overview"><p>The Destroyer can choose to hold off to kill more, but a night's kills must be in a line.</p>
+<ul>
+<li>When the Destroyer chooses the kill, they choose a player and the direction for the line of kills instead of each player individually.</li>
+<li>The Destroyer gains 2 extra kills per night they chose not to kill.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -737,7 +803,13 @@
 <p class="ability">Each night*, choose a player: learn how helpful killing them is to your team. Then, choose if they die. If not, tomorrow night, instead choose 2 player: they die.</p>
 <hr>
 <div class="flavor">To kill or not to kill? I do so enjoy toying with my prey, but I get ever so hungry...</div>
-<div class="overview"><p>The Wrazcal has the choice between a single kill, but they know how good a kill, or two blind kills on the next night.</p>
+<div class="overview"><p>The Wrazcal has the choice between an informed kill or two kills the next night.</p>
+<ul>
+<li>The Wrazcal learns how good their kill would be when they choose.</li>
+<li>They may then choose to follow through with the kill, or hold off.</li>
+<li>If they hold off, they may not choose again, but instead choose two players to kill tomorrow night.</li>
+<li>If the Wrazcal chooses 2 players, they don't learn how good those kills are.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -751,33 +823,17 @@
 </div>
 <p class="team">Demon</p></div>
 </li>
-<li class="page" id="fr_insan_blessingofperfidy">
-<div class="page-contents demon">
-<img src="https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/BlessingOfPerfidy.png?raw=true" class="characterImage" alt=""/><h2>Blessing of Perfidy</h2>
-<p class="ability">After day 5, all but you are poisoned, & good wins if & only if the Storyteller is executed tomorrow. Good players killed by execution bring this 1 day sooner.</p>
-<hr>
-<div class="flavor">Rise, my servants. Rise and serve me.</div>
-<div class="overview"><p>The Blessing of Perfidy forces good players to execute the Storyteller on the 6th day... but this comes closer when a wrong execution is made.</p>
-</div>
-<h3>Examples</h3>
-<div class="example">
-<p>No good players died by execution. On the sixth night, the Empath learns a 1 when both their alive neighbours are good, and the Acrobat does not die when they choose the Drunk.</p>
-<p>No good players died by execution. On the sixth day, the Blessing of Perfidy is executed. Evil wins.</p>
-<p>1 good player died by execution. On the fifth day, the Storyteller was executed. Good wins.</p>
-</div>
-<h3>How to Run</h3>
-<div class="how-to-run">
-<p>On the first night, place the "Distortion Clock" reminder 5 steps anticlockwise of the Blessing of Perfidy. At the end of each day, move this one step clockwise, or two if a good player died by execution today. If the "Distortion Clock" is on the Blessing of Perfidy (place it onto them if it goes past), all other players are poisoned. At the end of the next day, if the Storyteller was executed, good wins, otherwise evil does.</p>
-</div>
-<p class="team">Demon</p></div>
-</li>
-<li class="page" id="fr_insan_paradoxofmercy">
+<li class="page" id="mgob_apocalypsebird">
 <div class="page-contents demon">
 <img src="https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/ParadoxOfMercy.png?raw=true" class="characterImage" alt=""/><h2>Paradox of Mercy</h2>
 <p class="ability">After day 3, if all Minions live, evil wins. After day 5, evil wins.</p>
 <hr>
 <div class="flavor">Then, in the middle of all the chaotic cries, someone shouted: 'It's the beast! A big, scary monster lives in the black, dusky forest!'</div>
 <div class="overview"><p>The Paradox of Mercy wins if all Minions live after day 3, or after day 5.</p>
+<ul>
+<li>The Paradox of Mercy requires all Minions to be alive at the end of day 3 to win early.</li>
+<li>If the Paradox of Mercy is executed on the 3rd day, good wins as normal.</li>
+</ul>
 </div>
 <h3>Examples</h3>
 <div class="example">
@@ -792,20 +848,77 @@
 </div>
 <p class="team">Demon</p></div>
 </li>
+<li class="page" id="mgob_whitenight">
+<div class="page-contents demon">
+<img src="https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/BlessingOfPerfidy.png?raw=true" class="characterImage" alt=""/><h2>Blessing of Perfidy</h2>
+<p class="ability">After day 5, all but you are poisoned, & good wins if & only if the Storyteller is executed tomorrow. Good players killed by execution bring this 1 day sooner.</p>
+<hr>
+<div class="flavor">Rise, my servants. Rise and serve me.</div>
+<div class="overview"><p>The Blessing of Perfidy forces good players to execute the Storyteller on the 6th day... but this comes closer when a wrong execution is made.</p>
+<ul>
+<li>The Blessing of Perfidy has a single day upon which good can only win if they execute the Storyteller, and loses if they don't.</li>
+<li>Even if the Blessing of Perfidy is executed on that day, good still loses: they win if and only if they execute the Storyteller.</li>
+<li>This day is by default the 6th, but every good player that dies by execution brings it one closer.</li>
+<li>The day cannot be skipped by any means, and if it would be, it is simply always the soonest possible day.</li>
+<li>As per usual, if the Storyteller is executed without it being the correct day, evil wins.</li>
+</ul>
+</div>
+<h3>Examples</h3>
+<div class="example">
+<p>No good players died by execution. On the sixth night, the Empath learns a 1 when both their alive neighbours are good, and the Acrobat does not die when they choose the Drunk.</p>
+<p>No good players died by execution. On the sixth day, the Blessing of Perfidy is executed. Evil wins.</p>
+<p>1 good player died by execution. On the fifth day, the Storyteller was executed. Good wins.</p>
+</div>
+<h3>How to Run</h3>
+<div class="how-to-run">
+<p>On the first night, place the "Distortion Clock" reminder 5 steps anticlockwise of the Blessing of Perfidy.<br>At the end of each day, move this one step clockwise, or two if a good player died by execution today. If the "Distortion Clock" is on the Blessing of Perfidy (place it onto them if it goes past), all other players are poisoned. At the end of the next day, if the Storyteller was executed, good wins, otherwise evil does.</p>
+</div>
+<p class="team">Demon</p></div>
+</li>
 <li class="page" id="fr_insan_kuthullion">
 <div class="page-contents demon">
 <h2>Kuthullion</h2>
 <p class="ability">Each night*, see the grimoire, then choose a player: they die. After day 3, if all evils live, they lose.</p>
 <hr>
 <div class="flavor">I have seen the dark universe yawning<br>Where the black planets roll without aim,<br>Where they roll in their horror unheeded,<br>Without knowledge, or lustre, or name.</div>
+<div class="overview"><p>The Kuthullion knows the grimoire before they kill, but must kill an evil by the 4th night.</p>
+<ul>
+<li>The Kuthullion sees the grimoire before they kill, but only from the second night onwards.</li>
+<li>If no evil players are dead by the 4th night, good wins.</li>
+</ul>
+</div>
+<h3>Examples</h3>
+<div class="example">
+<p>The Kuthullion sees the Undertaker has been hiding as the Recluse, and kills them.</p>
+<p>At the end of the 3rd day, the Scarlet Woman is dead. The game continues.</p>
+<p>At the end of the 3rd day, no evil players are dead. Good wins.</p>
+</div>
+<h3>How to Run</h3>
+<div class="how-to-run">
+<p>At the end of the day, if the Kuthullion is unmarked, mark them "1st Day". If marked "1st Day", remove it and mark them "2nd Day". If marked "2nd Day", check if all evil players are alive: if so, good wins.<br> Each night besides the first, wake the Kuthullion, and show them the grimoire. Let them choose a player, that player dies.</p>
+</div>
 <p class="team">Demon</p></div>
 </li>
 <li class="page" id="fr_insan_thehouse">
 <div class="page-contents traveler">
 <h2>The House</h2>
-<p class="ability">Players may make wagers with eachother, they are binding if the Storyteller agrees. If you win a wager, something good happens for your team (you learn what).</p>
+<p class="ability">Players may make wagers with eachother or the Storyteller, they are binding if the Storyteller agrees. If you win a wager, something good happens for your team (you learn what).</p>
 <hr>
 <div class="flavor">Don't bet against the house.</div>
+<div class="overview"><p>The House allows wagers, and gets rewarded extra if they win.</p>
+<ul>
+<li>If The House is in play, players may make wagers.</li>
+<li>Each player in the wager sets a condition, and a price and/or reward.</li>
+<li>If the Storyteller hears the terms and agrees, it is binding, and the price/reward will come true should they be needed.</li>
+<li>If the House wins a wager, something good happens for their team, and they learn it.</li>
+</ul>
+</div>
+<h3>Examples</h3>
+<div class="example">
+<p>The Empath wagers they learn a 2 tonight. They state that if they win, they're sober, otherwise they're drunk. The Storyteller agrees, and they become drunk when they learn a 1.</p>
+<p>The Goblin wagers with the Fortune Teller they won't be executed if they claim Goblin, on condition that the loser is drunk immediately. The Goblin is executed, becomes drunk, and doesn't win.</p>
+<p>The good The House wagers with the High Priestess that 2 players will die tonight, and the loser gives their vote token to the winner. 2 players die that night, so the High Priestess' vote token is given to the House, and The House learns that the drunk Village Idiot became sober.</p>
+</div>
 <p class="team">Traveler</p></div>
 </li>
 <li class="page" id="nightOrder">
