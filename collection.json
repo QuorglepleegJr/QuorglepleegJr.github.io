@@ -109,12 +109,20 @@
                 "reason": "The Satanist registers as the Minion they saw to the Widow."
             }
         ],
+        "remindersGlobal": [
+            "Is the Satanist"
+        ],
         "flavor": "In the forgotten corners, in the darkest nooks, so does live the evil amongst us.",
         "hook": "The Satanist makes 2 players who think they are a Minion, but adds paranoia to one being secretly good.",
         "summary": [
             "If the Satanist is in play, the Demon and Satanist tokens are replaced with Minions.",
             "The Satanist still registers as a good Townsfolk to abilities.",
             "If the Satanist dies, good wins (including them)."
+        ],
+        "howtorun": "During setup, replace the Demon and the Satanist tokens with Minions. Mark one of the Minions \"Is the Satanist\" - they are \"The Demon\", and secretly good.<br>During the Minion info phase, show the Satanist as a Minion, and show the Satanist token instead of a Demon.<br> Each night besides the first, choose a player to kill (or not to kill).",
+        "examples": [
+            "In a 15 player game, 5 players think they are MInions, and have no Demon.",
+            "In a 9 player game, 3 players think they are Minions. The Poisoner is secretly the Satanist, and when they die, good wins (including them)."
         ]
     },
     {
