@@ -12,8 +12,8 @@
         "ability": "Each night, learn the character (on or off script) that would help your team the most.",
         "preceedingFirstNightId": "highpriestess",
         "preceedingOtherNightId": "highpriestess",
-        "firstNight": 67.5,
-        "otherNight": 86.5,
+        "firstNight": 68.5,
+        "otherNight": 87.5,
         "firstNightReminder": "Show the Intuitor the character that would help their team the most.",
         "flavor": "Behind every great idea, behind every good thought, is intuition. Hone that, and maybe you too can think the right way.",
         "hook": "The Intuitor learns the most useful characters to their team, whether in play or not, or even on script or not.",
@@ -33,7 +33,7 @@
             "Sinner"
         ],
         "preceedingOtherNightId": "acrobat",
-        "otherNight": 17.5,
+        "otherNight": 18.5,
         "otherNightReminder": " The Priest points at another player.",
         "flavor": "Back, foul demon, BACK!",
         "hook": "The Priest dies if they encounter the Demon, or a specific good player.",
@@ -58,7 +58,7 @@
         ],
         "setup": true,
         "preceedingFirstNightId": "poppygrower",
-        "firstNight": 10.5,
+        "firstNight": 11.5,
         "firstNightReminder": "Evils learn the Disruptor is in play",
         "flavor": "Nobody said it was *wrong* to sabotage things.",
         "hook": "The Disruptor forces Townsfolk to have the say by failing nominations with no Townsfolk votes.",
@@ -181,7 +181,7 @@
             "Anti-Clockwise"
         ],
         "preceedingFirstNightId": "xaan",
-        "firstNight": 25.5,
+        "firstNight": 26.5,
         "firstNightReminder": "The Ra'atchet indicates a direction.",
         "flavor": "etB ouy ookedl pu hatw hist eantm.",
         "hook": "The Ra'atchet rotates the grimoire one step for Townsfolk abilities.",
@@ -218,8 +218,8 @@
         ],
         "preceedingFirstNightId": "poisoner",
         "preceedingOtherNightId": "poisoner",
-        "firstNight": 26.5,
-        "otherNight": 12.75,
+        "firstNight": 27.5,
+        "otherNight": 13.875,
         "firstNightReminder": "The Archeolos points at a player.",
         "otherNightReminder": "The players with the Archeolos ability point at a player, or 2 if they are evil and were given it by good.",
         "flavor": "Ok class, today we're going to see what these do. Catch!",
@@ -249,7 +249,7 @@
             "Poisoned"
         ],
         "preceedingOtherNightId": "poisoner",
-        "otherNight": 12.5,
+        "otherNight": 13.75,
         "otherNightReminder": "If no Townsfolk nominated today, the Sorceror points at a player.",
         "flavor": "To turn upon one's own must be punished.",
         "hook": "The Sorceror forces good to permanently poison other good players, or face a night of untrustworthy information.",
@@ -271,7 +271,7 @@
         "team": "demon",
         "ability": "Each night*, choose a player: they die. Outsiders you kill change alignment. [Outsiders might start evil, -1 to +1 Outsider]",
         "preceedingOtherNightId": "kazali",
-        "otherNight": 50.9375,
+        "otherNight": 51.9375,
         "otherNightReminder": "The Siren points at a player.",
         "flavor": "They say you oughta dance like no one's watching<br>They're a telepathic chorus in my mind",
         "hook": "The Siren makes some Outsiders evil, and changes their alignment upon killing them.",
@@ -297,7 +297,7 @@
             "Dead"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 50.875,
+        "otherNight": 51.875,
         "otherNightReminder": "The Destroyer points at a player and indicates a direction, or shakes their head.",
         "flavor": "Goodbye.",
         "hook": "The Destroyer can choose to hold off to kill more, but a night's kills must be in a line.",
@@ -323,7 +323,7 @@
             "Dead"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 50.75,
+        "otherNight": 51.75,
         "flavor": "To kill or not to kill? I do so enjoy toying with my prey, but I get ever so hungry...",
         "hook": "The Wrazcal has the choice between an informed kill or two kills the next night.",
         "summary": [
@@ -351,7 +351,7 @@
             "2nd Day"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 50.5,
+        "otherNight": 51.5,
         "hook": "The Kuthullion knows the grimoire before they kill, but must kill an evil by the 4th night.",
         "summary": [
             "The Kuthullion sees the grimoire before they kill, but only from the second night onwards.",

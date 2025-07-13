@@ -104,7 +104,7 @@ def auto_insert_nightorder(in_json):
     return in_json
 
 if __name__ == "__main__":
-    json_file = "manygoodonebad"
+    json_file = "collection"
     new_json = auto_insert_nightorder(load_json_from_file(json_file))
     pretty_json = json.dumps(new_json, indent=4)
     with open(json_file + ".json", "w") as out:
