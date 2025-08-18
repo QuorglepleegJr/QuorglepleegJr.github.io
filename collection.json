@@ -271,7 +271,7 @@
         "team": "demon",
         "ability": "Each night*, choose a player: they die. Outsiders you kill change alignment. [Outsiders might start evil, -1 to +1 Outsider]",
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.9375,
+        "otherNight": 52.96875,
         "otherNightReminder": "The Siren points at a player.",
         "flavor": "They say you oughta dance like no one's watching<br>They're a telepathic chorus in my mind",
         "hook": "The Siren makes some Outsiders evil, and changes their alignment upon killing them.",
@@ -297,7 +297,7 @@
             "Dead"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.875,
+        "otherNight": 52.9375,
         "otherNightReminder": "The Destroyer points at a player and indicates a direction, or shakes their head.",
         "flavor": "Goodbye.",
         "hook": "The Destroyer can choose to hold off to kill more, but a night's kills must be in a line.",
@@ -323,7 +323,7 @@
             "Dead"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.75,
+        "otherNight": 52.875,
         "flavor": "To kill or not to kill? I do so enjoy toying with my prey, but I get ever so hungry...",
         "hook": "The Wrazcal has the choice between an informed kill or two kills the next night.",
         "summary": [
@@ -351,7 +351,7 @@
             "2nd Day"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.5,
+        "otherNight": 52.75,
         "hook": "The Kuthullion knows the grimoire before they kill, but must kill an evil by the 4th night.",
         "summary": [
             "The Kuthullion sees the grimoire before they kill, but only from the second night onwards.",
@@ -363,6 +363,37 @@
             "At the end of the 3rd day, the Scarlet Woman is dead. The game continues.",
             "At the end of the 3rd day, no evil players are dead. Good wins."
         ]
+    },
+    {
+        "id": "fr_insan_ketacles",
+        "name": "Ketacles",
+        "team": "demon",
+        "ability": "Each night*, choose a player: they die. If 3 players live, good only wins if an Outsider is executed. [+1 Outsider]",
+        "jinxes": [
+            {
+                "id": "saint",
+                "reason": "If the living Saint is executed on the final day, good wins."
+            }
+        ],
+        "flavor": "My roots take hold in the minds of those scorned.",
+        "reminders": [
+            "Dead"
+        ],
+        "preceedingOtherNightId": "kazali",
+        "hook": "The Ketacles forces good to execute an Outsider on the final day to win.",
+        "summary": [
+            "If the Ketacles is in play, an extra Outsider is added to the bag.",
+            "On the final day, good wins if and only if an Outsider is executed.",
+            "Good still loses even if they execute the Ketacles on the final day, or if they do not execute.",
+            "Good wins if they execute an outsider, regardless of if that Outsider is dead or alive."
+        ],
+        "examples": [
+            "3 players live, and nobody is executed. Evil wins immediately.",
+            "3 players live, and the Ketacles is executed. Evil wins.",
+            "3 players live, and the alive Barber is executed. Good wins.",
+            "3 players live, and the dead Klutz is executed. Good wins."
+        ],
+        "otherNight": 52.5
     },
     {
         "id": "fr_insan_thehouse",
