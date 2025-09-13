@@ -271,7 +271,7 @@
         "team": "demon",
         "ability": "Each night*, choose a player: they die. Outsiders you kill change alignment. [Outsiders might start evil, -1 to +1 Outsider]",
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.96875,
+        "otherNight": 52.984375,
         "otherNightReminder": "The Siren points at a player.",
         "flavor": "They say you oughta dance like no one's watching<br>They're a telepathic chorus in my mind",
         "hook": "The Siren makes some Outsiders evil, and changes their alignment upon killing them.",
@@ -297,7 +297,7 @@
             "Dead"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.9375,
+        "otherNight": 52.96875,
         "otherNightReminder": "The Destroyer points at a player and indicates a direction, or shakes their head.",
         "flavor": "Goodbye.",
         "hook": "The Destroyer can choose to hold off to kill more, but a night's kills must be in a line.",
@@ -323,7 +323,7 @@
             "Dead"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.875,
+        "otherNight": 52.9375,
         "flavor": "To kill or not to kill? I do so enjoy toying with my prey, but I get ever so hungry...",
         "hook": "The Wrazcal has the choice between an informed kill or two kills the next night.",
         "summary": [
@@ -351,7 +351,7 @@
             "2nd Day"
         ],
         "preceedingOtherNightId": "kazali",
-        "otherNight": 52.75,
+        "otherNight": 52.875,
         "hook": "The Kuthullion knows the grimoire before they kill, but must kill an evil by the 4th night.",
         "summary": [
             "The Kuthullion sees the grimoire before they kill, but only from the second night onwards.",
@@ -392,6 +392,61 @@
             "3 players live, and the Ketacles is executed. Evil wins.",
             "3 players live, and the alive Barber is executed. Good wins.",
             "3 players live, and the dead Klutz is executed. Good wins."
+        ],
+        "otherNight": 52.75
+    },
+    {
+        "id": "fr_insan_skemator",
+        "name": "Skemator",
+        "team": "demon",
+        "ability": "Evil wins if noone is executed in a day, or after day 3, extended by 1 for each alive Minion.",
+        "flavor": "Those who serve me only weigh me down. Come, see how you fare with us both alone.",
+        "reminders": [
+            "1st Day",
+            "2nd Day",
+            "Minion 1",
+            "Minion 2",
+            "Minion 3"
+        ],
+        "hook": "The Skemator wins earlier if its Minions are killed before it.",
+        "summary": [
+            "The Skemator has a threshold for winning at day (3 + alive Minions).",
+            "If this is ever passed, evil wins.",
+            "If an alive Minion is killed the day evil would win after, evil wins instantly.",
+            "If an alive Minion is executed the day before evil would win, evil still wins instantly, as the timer reduces to the end of the current day.",
+            "If nobody is executed each day, evil wins."
+        ],
+        "examples": [
+            "There are 2 alive Minions, and day 5 ends with a good player's execution: evil wins.",
+            "It is day 3, and the only Minion is executed: evil wins.",
+            "It is day 4, with only 1 alive Minion. They are nominated by the Golem, die, and evil wins.",
+            "It is day 3, with no alive Minions. The Skemator is executed, and good wins.",
+            "On the 1st day, nobody is executed. Evil wins.",
+            "On the 2nd day, the Sailor is executed and survives. The game continues."
+        ]
+    },
+    {
+        "id": "fr_insan_cnidreat",
+        "name": "Cnidreat",
+        "team": "demon",
+        "ability": "After day 5, evil wins. Twice per game, at night*, you may choose a player: they die. If you die this way, you live & register dead.",
+        "flavor": "\ud802\udd14\ud802\udd05\ud802\udd0d \ud802\udd04\ud802\udd0b\ud802\udd06\ud802\udd0c \ud802\udd14\ud802\udd0b \ud802\udd01\ud802\udd09 \ud802\udd0c\ud802\udd0d. \ud802\udd01\ud802\udd15 \ud802\udd0f\ud802\udd0d\ud802\udd15\ud802\udd0b \ud802\udd15\ud802\udd0d \ud802\udd00\ud802\udd09 \ud802\udd00\ud802\udd05\ud802\udd0b \ud802\udd0d\ud802\udd05 \ud802\udd0d\ud802\udd03 \ud802\udd10\ud802\udd13 \ud802\udd09\ud802\udd05.",
+        "reminders": [
+            "Dead"
+        ],
+        "preceedingOtherNightId": "kazali",
+        "hook": "The Cnidreat bridges the gap between a timer and kills, tactically disabling players or hiding itself.",
+        "summary": [
+            "At the end of day 5, evil wins.",
+            "Twice before that, at night*, the Cnidreat may choose to kill a player.",
+            "If the Cnidreat chooses to kill themselves, they register dead, but are secretly alive.",
+            "An undead Cnidreat may not nominate and may only vote once, as if they were dead."
+        ],
+        "examples": [
+            "The Mutant is executed on day 5. Evil wins.",
+            "The Cnidreat chooses the Fortune Teller on the 2nd night, who dies.",
+            "The Cnidreat is bluffing Undertaker, and chooses themselves to fake their death.",
+            "The Cnidreat chooses themselves on the 3rd night. The next day, good executes them anyway, believing them to be the Cnidreat: they die and good wins."
         ],
         "otherNight": 52.5
     },

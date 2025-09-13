@@ -634,7 +634,7 @@ def main(in_name = "", out_name = ""):
         generate_almanac_from_json(in_name, out_name)
     except Exception as e:
         print(traceback.format_exc())
-        print("Something went wrong. Check the json file exists and is formatted correctly. Alternatively, forward this to Fragments/Quorg (they'll need the JSON).")
+        print("Something went wrong. Check the json file exists and is formatted correctly. Alternatively, forward this to Fragments/Quorg (they'll need the JSON). Alternatively alternatively, cry.")
 
 if __name__ == "__main__":
     main("collection", "index")

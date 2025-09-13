@@ -505,6 +505,8 @@
 <li class="demon"><a href="#fr_insan_wrazcal">Wrazcal</a></li>
 <li class="demon"><a href="#fr_insan_kuthullion">Kuthullion</a></li>
 <li class="demon"><a href="#fr_insan_ketacles">Ketacles</a></li>
+<li class="demon"><a href="#fr_insan_skemator">Skemator</a></li>
+<li class="demon"><a href="#fr_insan_cnidreat">Cnidreat</a></li>
 <li class="traveler"><a href="#fr_insan_thehouse">The House</a></li>
 <li class="townsfolk"><a href="#mgob_meatlantern">Temptation</a></li>
 <li class="townsfolk"><a href="#mgob_graveofcherryblossoms">Blossoms</a></li>
@@ -900,6 +902,55 @@
 <p>3 players live, and the Ketacles is executed. Evil wins.</p>
 <p>3 players live, and the alive Barber is executed. Good wins.</p>
 <p>3 players live, and the dead Klutz is executed. Good wins.</p>
+</div>
+<p class="team">Demon</p></div>
+</li>
+<li class="page" id="fr_insan_skemator">
+<div class="page-contents demon">
+<h2>Skemator</h2>
+<p class="ability">Evil wins if noone is executed in a day, or after day 3, extended by 1 for each alive Minion.</p>
+<hr>
+<div class="flavor">Those who serve me only weigh me down. Come, see how you fare with us both alone.</div>
+<div class="overview"><p>The Skemator wins earlier if its Minions are killed before it.</p>
+<ul>
+<li>The Skemator has a threshold for winning at day (3 + alive Minions).</li>
+<li>If this is ever passed, evil wins.</li>
+<li>If an alive Minion is killed the day evil would win after, evil wins instantly.</li>
+<li>If an alive Minion is executed the day before evil would win, evil still wins instantly, as the timer reduces to the end of the current day.</li>
+<li>If nobody is executed each day, evil wins.</li>
+</ul>
+</div>
+<h3>Examples</h3>
+<div class="example">
+<p>There are 2 alive Minions, and day 5 ends with a good player's execution: evil wins.</p>
+<p>It is day 3, and the only Minion is executed: evil wins.</p>
+<p>It is day 4, with only 1 alive Minion. They are nominated by the Golem, die, and evil wins.</p>
+<p>It is day 3, with no alive Minions. The Skemator is executed, and good wins.</p>
+<p>On the 1st day, nobody is executed. Evil wins.</p>
+<p>On the 2nd day, the Sailor is executed and survives. The game continues.</p>
+</div>
+<p class="team">Demon</p></div>
+</li>
+<li class="page" id="fr_insan_cnidreat">
+<div class="page-contents demon">
+<h2>Cnidreat</h2>
+<p class="ability">After day 5, evil wins. Twice per game, at night*, you may choose a player: they die. If you die this way, you live & register dead.</p>
+<hr>
+<div class="flavor">𐤔𐤅𐤍 𐤄𐤋𐤆𐤌 𐤔𐤋 𐤁𐤉 𐤌𐤍. 𐤁𐤕 𐤏𐤍𐤕𐤋 𐤕𐤍 𐤀𐤉 𐤀𐤅𐤋 𐤍𐤅 𐤍𐤃 𐤐𐤓 𐤉𐤅.</div>
+<div class="overview"><p>The Cnidreat bridges the gap between a timer and kills, tactically disabling players or hiding itself.</p>
+<ul>
+<li>At the end of day 5, evil wins.</li>
+<li>Twice before that, at night*, the Cnidreat may choose to kill a player.</li>
+<li>If the Cnidreat chooses to kill themselves, they register dead, but are secretly alive.</li>
+<li>An undead Cnidreat may not nominate and may only vote once, as if they were dead.</li>
+</ul>
+</div>
+<h3>Examples</h3>
+<div class="example">
+<p>The Mutant is executed on day 5. Evil wins.</p>
+<p>The Cnidreat chooses the Fortune Teller on the 2nd night, who dies.</p>
+<p>The Cnidreat is bluffing Undertaker, and chooses themselves to fake their death.</p>
+<p>The Cnidreat chooses themselves on the 3rd night. The next day, good executes them anyway, believing them to be the Cnidreat: they die and good wins.</p>
 </div>
 <p class="team">Demon</p></div>
 </li>
@@ -1618,6 +1669,8 @@ Priest</div>
 Crimson March</div>
 <div></div><div class="nightOrderListName">
 Alluring Fruit</div>
+<div></div><div class="nightOrderListName">
+Cnidreat</div>
 <div></div><div class="nightOrderListName">
 Ketacles</div>
 <div></div><div class="nightOrderListName">
