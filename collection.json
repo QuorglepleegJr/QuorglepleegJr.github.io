@@ -474,7 +474,7 @@
         "name": "Temptation",
         "team": "townsfolk",
         "image": "https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/Temptation.png?raw=true",
-        "ability": "Each night, choose a player: if evil, they learn this. If they nominate you tomorrow, they are drunk, even if you die.",
+        "ability": "Each night, choose a player: if evil, they learn this. If they nominate you tomorrow, they are drunk. If the Demon, a Minion is instead.",
         "reminders": [
             "Tempted",
             "Drunk",
@@ -541,7 +541,7 @@
         "id": "mgob_crumblingarmour",
         "name": "Recklessness",
         "team": "townsfolk",
-        "ability": "Each night, choose a player. The 2nd time you choose evil, lose this ability.",
+        "ability": "Each night, choose a player. If they are evil & you have chosen an evil player before, lose this ability.",
         "reminders": [
             "Once",
             "No Ability"
@@ -708,7 +708,7 @@
         "id": "mgob_fragmentoftheuniverse",
         "name": "Echoes",
         "team": "townsfolk",
-        "ability": "Each day, you may publicly declare an uncertain game-related statement. Players vote if they believe it true or false. Tonight, learn if the majority were correct. If most evils were correct, this is false.",
+        "ability": "Each day, you may publicly ask a yes/no question, all answer. Tonight, learn if the majority was right & the majority of evil was wrong or vice versa.",
         "reminders": [
             "Called",
             "Majority Correct",
@@ -815,7 +815,7 @@
         "id": "mgob_beautyandthebeast",
         "name": "Beauty",
         "team": "townsfolk",
-        "ability": "Players that nominate & execute you might become Beauty.",
+        "ability": "Non-Demons that nominate and execute you become Beauty.",
         "flavor": "However, the curse continues eternally, never broken.",
         "hook": "Beauty passes on its character on execution.",
         "summary": [
@@ -835,7 +835,7 @@
         "id": "mgob_shelterfromthe27thofmarch",
         "name": "Shelter",
         "team": "outsider",
-        "ability": "Once per game, at night (even if you are dead, unless it is the final night), the Demon may choose that if they are executed tomorrow, a Minion becomes the Demon.",
+        "ability": "The 1st time the Demon dies, a Minion becomes it, even if dead. On the final night or if executed by an evil, lose this ability.",
         "reminders": [
             "Safety",
             "No Ability",
@@ -924,7 +924,7 @@
         "name": "Sadist",
         "team": "outsider",
         "image": "https://github.com/QuorglepleegJr/PublishedBotCIcons/blob/master/Sadist.png?raw=true",
-        "ability": "Townsfolk that nominate you or choose you with their abilities at night are drunk & receive reversed info tonight & tomorrow day, even if you are dead.",
+        "ability": "Townsfolk that nominate you or choose you with their abilities at night are drunk until dusk, even if you are dead.",
         "reminders": [
             "Nominated",
             "Drunk",
